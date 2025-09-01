@@ -36,3 +36,13 @@ ENV/
 
 # Local configuration
 config/local.yml
+
+# Data files
+data/
+data/Graph/
+data/Relational/
+data/Text/
+*.csv
+*.xlsx
+*.zip
+*.pdf
