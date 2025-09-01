@@ -75,3 +75,21 @@ class TextoCasoLanding(BaseModel):
     entidad: str
     keywords: List[str]
     source_file: str
+
+# --- Modelos práctica 1 (Integración de pacientes) ---
+class PacienteFederadoLanding(BaseModel):
+    """Modelo landing federado para pacientes de múltiples hospitales.
+    Restricciones de longitud aproximadas según requerimiento (no se fuerzan en DB aquí).
+    """
+    pac_clave: int  # surrogate key
+    nombrePac: str
+    apePatPac: Optional[str] = None
+    apeMatPac: Optional[str] = None
+    direccion: Optional[str] = None
+    HospOrigen: str  # Siglo21 | ABC | MedicaSur
+
+    @validator('nombrePac', 'apePatPac', 'apeMatPac', 'direccion', pre=True, always=True)
+    def strip_whitespace(cls, v):
+        if v is None:
+            return v
+        return str(v).strip()

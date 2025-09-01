@@ -9,7 +9,7 @@ from src.etl.ingestion import CovidDataIngester
 
 @pytest.fixture
 def data_path():
-    return Path("D:/maestria/mdm-framework/data")
+    return Path(__file__).parent.parent / "data"
 
 @pytest.fixture
 def ingester(data_path):

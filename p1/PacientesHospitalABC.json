@@ -1,0 +1,602 @@
+[
+	{
+		"NOMBRE": "Christopher",
+		"APELLIDO": "Cárdenas",
+		"NSS": "61298736999",
+		"Direccion": "Apdo.:881-3974 Velit Avenida"
+	},
+	{
+		"NOMBRE": "Andres",
+		"APELLIDO": "Navarro",
+		"NSS": "87305668399",
+		"Direccion": "Apdo.:214-9519 Fusce Avenida"
+	},
+	{
+		"NOMBRE": "Manu",
+		"APELLIDO": "Gallardo",
+		"NSS": "85496864999",
+		"Direccion": "Apdo.:464-3974 Enim. C/"
+	},
+	{
+		"NOMBRE": "Lucca",
+		"APELLIDO": "Tapia",
+		"NSS": "67331835899",
+		"Direccion": "865-4550 Nunc Calle"
+	},
+	{
+		"NOMBRE": "Priscila",
+		"APELLIDO": "Jiménez",
+		"NSS": "91996735699",
+		"Direccion": "221-6477 Cum Calle"
+	},
+	{
+		"NOMBRE": "Saray",
+		"APELLIDO": "Maldonado",
+		"NSS": "99741583299",
+		"Direccion": "856-2267 Ipsum Avda."
+	},
+	{
+		"NOMBRE": "Remigio",
+		"APELLIDO": "Torres",
+		"NSS": "76834500299",
+		"Direccion": "729-2822 Adipiscing Carretera"
+	},
+	{
+		"NOMBRE": "Fermín",
+		"APELLIDO": "Sanhueza",
+		"NSS": "68546081299",
+		"Direccion": "8475 Ante C/"
+	},
+	{
+		"NOMBRE": "Yastin",
+		"APELLIDO": "Escobar",
+		"NSS": "54827838099",
+		"Direccion": "6145 Pretium Avda."
+	},
+	{
+		"NOMBRE": "Axl",
+		"APELLIDO": "Pino",
+		"NSS": "52699674199",
+		"Direccion": "220-2523 Magna. Avenida"
+	},
+	{
+		"NOMBRE": "Ariana",
+		"APELLIDO": "San Martín",
+		"NSS": "04898628199",
+		"Direccion": "2985 Consequat Av."
+	},
+	{
+		"NOMBRE": "Montserrat",
+		"APELLIDO": "Sánchez",
+		"NSS": "06829961299",
+		"Direccion": "Apartado núm.: 351, 2150 Metus. Carretera"
+	},
+	{
+		"NOMBRE": "Yeremy",
+		"APELLIDO": "Jara",
+		"NSS": "89665363799",
+		"Direccion": "Apdo.:366-1900 Erat, "
+	},
+	{
+		"NOMBRE": "Antony",
+		"APELLIDO": "Cortés",
+		"NSS": "20918062199",
+		"Direccion": "4577 Ut Av."
+	},
+	{
+		"NOMBRE": "Demyan",
+		"APELLIDO": "Leiva",
+		"NSS": "78838570099",
+		"Direccion": "4016 Libero. "
+	},
+	{
+		"NOMBRE": "Mattias",
+		"APELLIDO": "Leiva",
+		"NSS": "97582834599",
+		"Direccion": "528-8652 Lobortis, Carretera"
+	},
+	{
+		"NOMBRE": "Dustin",
+		"APELLIDO": "Saavedra",
+		"NSS": "72641860299",
+		"Direccion": "3056 Erat Ctra."
+	},
+	{
+		"NOMBRE": "Katherin",
+		"APELLIDO": "Morales",
+		"NSS": "28309611099",
+		"Direccion": "5158 Ligula Calle"
+	},
+	{
+		"NOMBRE": "Andy",
+		"APELLIDO": "Bustos",
+		"NSS": "65731979999",
+		"Direccion": "Apdo.:884-7837 Scelerisque C/"
+	},
+	{
+		"NOMBRE": "Alessandro",
+		"APELLIDO": "González",
+		"NSS": "08469788199",
+		"Direccion": "Apartado núm.: 704, 191 A Avda."
+	},
+	{
+		"NOMBRE": "Ihan",
+		"APELLIDO": "Álvarez",
+		"NSS": "34438279699",
+		"Direccion": "Apartado núm.: 761, 1437 Ullamcorper Av."
+	},
+	{
+		"NOMBRE": "Yojan",
+		"APELLIDO": "Díaz",
+		"NSS": "47667029999",
+		"Direccion": "893-1468 Praesent "
+	},
+	{
+		"NOMBRE": "Octavia",
+		"APELLIDO": "Araya",
+		"NSS": "01445416299",
+		"Direccion": "264-2216 Phasellus C."
+	},
+	{
+		"NOMBRE": "Dennis",
+		"APELLIDO": "Yáñez",
+		"NSS": "94911042199",
+		"Direccion": "Apartado núm.: 958, 505 A Ctra."
+	},
+	{
+		"NOMBRE": "Luccas",
+		"APELLIDO": "Aguilera",
+		"NSS": "57727411499",
+		"Direccion": "195-3490 Dictum. C/"
+	},
+	{
+		"NOMBRE": "Nikolas",
+		"APELLIDO": "Sepúlveda",
+		"NSS": "82371121999",
+		"Direccion": "Apartado núm.: 462, 2819 Nam Ctra."
+	},
+	{
+		"NOMBRE": "Christián",
+		"APELLIDO": "Vera",
+		"NSS": "72805646799",
+		"Direccion": "Apartado núm.: 695, 871 Egestas. Ctra."
+	},
+	{
+		"NOMBRE": "Elvis",
+		"APELLIDO": "Miranda",
+		"NSS": "72793136799",
+		"Direccion": "679-2321 Scelerisque C."
+	},
+	{
+		"NOMBRE": "Manu",
+		"APELLIDO": "Hernández",
+		"NSS": "23290302899",
+		"Direccion": "456-7828 Dolor Carretera"
+	},
+	{
+		"NOMBRE": "Katrina",
+		"APELLIDO": "Herrera",
+		"NSS": "84262228399",
+		"Direccion": "4189 Nam Carretera"
+	},
+	{
+		"NOMBRE": "Renatto",
+		"APELLIDO": "Sanhueza",
+		"NSS": "35925146099",
+		"Direccion": "Apartado núm.: 708, 615 Metus. C."
+	},
+	{
+		"NOMBRE": "Lucía",
+		"APELLIDO": "Donoso",
+		"NSS": "53465602199",
+		"Direccion": "Apdo.:816-5056 Faucibus Avenida"
+	},
+	{
+		"NOMBRE": "Vincen",
+		"APELLIDO": "Farías",
+		"NSS": "61323795399",
+		"Direccion": "6312 Et Ctra."
+	},
+	{
+		"NOMBRE": "Natanael",
+		"APELLIDO": "Herrera",
+		"NSS": "28997545199",
+		"Direccion": "Apdo.:199-9461 Lectus C/"
+	},
+	{
+		"NOMBRE": "Flavio",
+		"APELLIDO": "Herrera",
+		"NSS": "46966910899",
+		"Direccion": "3135 Varius Calle"
+	},
+	{
+		"NOMBRE": "Mariano",
+		"APELLIDO": "Ortega",
+		"NSS": "35528353399",
+		"Direccion": "Apartado núm.: 836, 8063 Interdum Avda."
+	},
+	{
+		"NOMBRE": "Mateo",
+		"APELLIDO": "Sanhueza",
+		"NSS": "34258539299",
+		"Direccion": "Apartado núm.: 299, 4551 Et "
+	},
+	{
+		"NOMBRE": "Gaston",
+		"APELLIDO": "Bravo",
+		"NSS": "62418843199",
+		"Direccion": "7879 Cubilia Carretera"
+	},
+	{
+		"NOMBRE": "Mercedes",
+		"APELLIDO": "Guerrero",
+		"NSS": "40903284799",
+		"Direccion": "Apdo.:985-6908 Fusce "
+	},
+	{
+		"NOMBRE": "Aixa",
+		"APELLIDO": "Soto",
+		"NSS": "70404543399",
+		"Direccion": "574-5442 Hendrerit. Avda."
+	},
+	{
+		"NOMBRE": "Patricia",
+		"APELLIDO": "Alvarado",
+		"NSS": "19666016999",
+		"Direccion": "Apdo.:992-661 A Avenida"
+	},
+	{
+		"NOMBRE": "Yanella",
+		"APELLIDO": "Gómez",
+		"NSS": "99341404699",
+		"Direccion": "205-5751 At "
+	},
+	{
+		"NOMBRE": "Johaquin",
+		"APELLIDO": "Aguilera",
+		"NSS": "49499025499",
+		"Direccion": "Apartado núm.: 846, 185 Dolor C."
+	},
+	{
+		"NOMBRE": "Angeles",
+		"APELLIDO": "Torres",
+		"NSS": "66856480399",
+		"Direccion": "615-5121 Ipsum. C."
+	},
+	{
+		"NOMBRE": "Bianka",
+		"APELLIDO": "Donoso",
+		"NSS": "61699021699",
+		"Direccion": "711 Metus Avda."
+	},
+	{
+		"NOMBRE": "Alan",
+		"APELLIDO": "Carrasco",
+		"NSS": "72282666799",
+		"Direccion": "Apartado núm.: 323, 4101 Velit C."
+	},
+	{
+		"NOMBRE": "Ariadna",
+		"APELLIDO": "Cortés",
+		"NSS": "47817568399",
+		"Direccion": "Apdo.:140-1757 Per Av."
+	},
+	{
+		"NOMBRE": "Ariel",
+		"APELLIDO": "Fernández",
+		"NSS": "31738987499",
+		"Direccion": "Apartado núm.: 997, 310 Massa. Avenida"
+	},
+	{
+		"NOMBRE": "Maira",
+		"APELLIDO": "Guzmán",
+		"NSS": "16885097099",
+		"Direccion": "461 Id, "
+	},
+	{
+		"NOMBRE": "Eliam",
+		"APELLIDO": "Ramírez",
+		"NSS": "57621328899",
+		"Direccion": "Apartado núm.: 971, 1905 Consectetuer Ctra."
+	},
+	{
+		"NOMBRE": "Bástian",
+		"APELLIDO": "Fernández",
+		"NSS": "48434000999",
+		"Direccion": "558-6007 Mattis. C/"
+	},
+	{
+		"NOMBRE": "Brian",
+		"APELLIDO": "Reyes",
+		"NSS": "13534791799",
+		"Direccion": "769-6499 Ipsum. Carretera"
+	},
+	{
+		"NOMBRE": "Celso",
+		"APELLIDO": "Espinoza",
+		"NSS": "17522792299",
+		"Direccion": "5162 Enim, Av."
+	},
+	{
+		"NOMBRE": "Marcela",
+		"APELLIDO": "Morales",
+		"NSS": "70881752299",
+		"Direccion": "Apartado núm.: 263, 4901 Ac C."
+	},
+	{
+		"NOMBRE": "Rosa",
+		"APELLIDO": "Medina",
+		"NSS": "47968322599",
+		"Direccion": "839-706 Imperdiet Av."
+	},
+	{
+		"NOMBRE": "Joshua",
+		"APELLIDO": "Vidal",
+		"NSS": "36655897899",
+		"Direccion": "9737 Amet, "
+	},
+	{
+		"NOMBRE": "Fabiola",
+		"APELLIDO": "Herrera",
+		"NSS": "71776750499",
+		"Direccion": "708-4815 Nibh Carretera"
+	},
+	{
+		"NOMBRE": "Paulette",
+		"APELLIDO": "Salazar",
+		"NSS": "11738858299",
+		"Direccion": "Apdo.:470-3208 Pede. Avda."
+	},
+	{
+		"NOMBRE": "Britany",
+		"APELLIDO": "Jara",
+		"NSS": "62763527899",
+		"Direccion": "415-3028 Amet, C/"
+	},
+	{
+		"NOMBRE": "Damari",
+		"APELLIDO": "San Martín",
+		"NSS": "51951611699",
+		"Direccion": "7347 Ullamcorper. Av."
+	},
+	{
+		"NOMBRE": "Liset",
+		"APELLIDO": "Rodríguez",
+		"NSS": "13826683199",
+		"Direccion": "553-6182 Donec C/"
+	},
+	{
+		"NOMBRE": "Deivid",
+		"APELLIDO": "Soto",
+		"NSS": "33684089399",
+		"Direccion": "Apdo.:813-601 Dictum. C/"
+	},
+	{
+		"NOMBRE": "Helena",
+		"APELLIDO": "Rodríguez",
+		"NSS": "30734973599",
+		"Direccion": "4538 Convallis Avda."
+	},
+	{
+		"NOMBRE": "Kenny",
+		"APELLIDO": "Contreras",
+		"NSS": "26927585599",
+		"Direccion": "4682 Molestie Carretera"
+	},
+	{
+		"NOMBRE": "Marina",
+		"APELLIDO": "Ruiz",
+		"NSS": "99772084099",
+		"Direccion": "Apdo.:787-287 Et Avenida"
+	},
+	{
+		"NOMBRE": "Simoney",
+		"APELLIDO": "Reyes",
+		"NSS": "86707946299",
+		"Direccion": "Apdo.:799-8202 Dapibus C/"
+	},
+	{
+		"NOMBRE": "Kristel",
+		"APELLIDO": "Valenzuela",
+		"NSS": "35247095699",
+		"Direccion": "871-9289 At Calle"
+	},
+	{
+		"NOMBRE": "Ariki",
+		"APELLIDO": "Sáez",
+		"NSS": "71831408899",
+		"Direccion": "9687 Dignissim "
+	},
+	{
+		"NOMBRE": "Ulises",
+		"APELLIDO": "Donoso",
+		"NSS": "19857709199",
+		"Direccion": "Apdo.:476-1979 Nunc Avda."
+	},
+	{
+		"NOMBRE": "Anahy",
+		"APELLIDO": "Alvarado",
+		"NSS": "95306557299",
+		"Direccion": "731-5072 Arcu C/"
+	},
+	{
+		"NOMBRE": "Gerardo",
+		"APELLIDO": "Salinas",
+		"NSS": "06490975599",
+		"Direccion": "108-4438 Morbi Avda."
+	},
+	{
+		"NOMBRE": "Alice",
+		"APELLIDO": "Valdés",
+		"NSS": "55886345299",
+		"Direccion": "Apartado núm.: 160, 2440 Eget, "
+	},
+	{
+		"NOMBRE": "Bernardita",
+		"APELLIDO": "Cárdenas",
+		"NSS": "38465903399",
+		"Direccion": "Apdo.:894-2075 Sit Calle"
+	},
+	{
+		"NOMBRE": "Flavio",
+		"APELLIDO": "Poblete",
+		"NSS": "63410804999",
+		"Direccion": "Apartado núm.: 813, 5902 Imperdiet Av."
+	},
+	{
+		"NOMBRE": "Viktor",
+		"APELLIDO": "Morales",
+		"NSS": "52546815599",
+		"Direccion": "Apdo.:353-9019 Euismod Calle"
+	},
+	{
+		"NOMBRE": "Wladimir",
+		"APELLIDO": "Soto",
+		"NSS": "03875976799",
+		"Direccion": "165-708 Rutrum Avenida"
+	},
+	{
+		"NOMBRE": "Mayra",
+		"APELLIDO": "Rivera",
+		"NSS": "80961640499",
+		"Direccion": "8530 Neque. "
+	},
+	{
+		"NOMBRE": "Héctor",
+		"APELLIDO": "Yáñez",
+		"NSS": "90949773299",
+		"Direccion": "821-1587 Vel "
+	},
+	{
+		"NOMBRE": "Natalie",
+		"APELLIDO": "Díaz",
+		"NSS": "93935367499",
+		"Direccion": "591-4020 Arcu C/"
+	},
+	{
+		"NOMBRE": "Skarleth",
+		"APELLIDO": "Díaz",
+		"NSS": "25574187399",
+		"Direccion": "Apartado núm.: 279, 4085 Fames Avenida"
+	},
+	{
+		"NOMBRE": "Florencia",
+		"APELLIDO": "Gutiérrez",
+		"NSS": "30897195099",
+		"Direccion": "3778 Nec Avenida"
+	},
+	{
+		"NOMBRE": "Alex",
+		"APELLIDO": "Paredes",
+		"NSS": "85659108099",
+		"Direccion": "Apdo.:483-4101 Eros "
+	},
+	{
+		"NOMBRE": "Issidora",
+		"APELLIDO": "Guerrero",
+		"NSS": "33929443099",
+		"Direccion": "Apartado núm.: 278, 8117 Sociosqu Avda."
+	},
+	{
+		"NOMBRE": "Agustín",
+		"APELLIDO": "Castro",
+		"NSS": "74503613099",
+		"Direccion": "Apdo.:303-1292 Vel, Av."
+	},
+	{
+		"NOMBRE": "Viktor",
+		"APELLIDO": "Peña",
+		"NSS": "16342616399",
+		"Direccion": "Apartado núm.: 989, 8519 Felis, Avenida"
+	},
+	{
+		"NOMBRE": "Scarlet",
+		"APELLIDO": "Figueroa",
+		"NSS": "25779360999",
+		"Direccion": "398 Ultricies Avenida"
+	},
+	{
+		"NOMBRE": "Viviana",
+		"APELLIDO": "Cáceres",
+		"NSS": "76989032899",
+		"Direccion": "Apdo.:721-8815 Nunc C."
+	},
+	{
+		"NOMBRE": "Cristofer",
+		"APELLIDO": "Jara",
+		"NSS": "89203911199",
+		"Direccion": "Apdo.:997-4089 Non Avenida"
+	},
+	{
+		"NOMBRE": "Daphne",
+		"APELLIDO": "Rodríguez",
+		"NSS": "46856877099",
+		"Direccion": "Apdo.:273-7024 Rutrum Avenida"
+	},
+	{
+		"NOMBRE": "Pascual",
+		"APELLIDO": "Valenzuela",
+		"NSS": "15787888899",
+		"Direccion": "Apdo.:798-6938 Purus, C."
+	},
+	{
+		"NOMBRE": "Marcia",
+		"APELLIDO": "Molina",
+		"NSS": "52666327599",
+		"Direccion": "Apartado núm.: 722, 9081 Dolor Av."
+	},
+	{
+		"NOMBRE": "Nallely",
+		"APELLIDO": "Herrera",
+		"NSS": "46824369199",
+		"Direccion": "634-7855 Aliquam Avenida"
+	},
+	{
+		"NOMBRE": "Yoan",
+		"APELLIDO": "Valdés",
+		"NSS": "15742762199",
+		"Direccion": "9172 In "
+	},
+	{
+		"NOMBRE": "Yamilet",
+		"APELLIDO": "Valdés",
+		"NSS": "49551076299",
+		"Direccion": "Apartado núm.: 534, 4029 Sed Av."
+	},
+	{
+		"NOMBRE": "Aarón",
+		"APELLIDO": "Romero",
+		"NSS": "61772199799",
+		"Direccion": "Apartado núm.: 735, 5190 Morbi Carretera"
+	},
+	{
+		"NOMBRE": "Darien",
+		"APELLIDO": "Yáñez",
+		"NSS": "36935445999",
+		"Direccion": "Apdo.:213-1787 Tellus, C."
+	},
+	{
+		"NOMBRE": "Balthazar",
+		"APELLIDO": "Guerrero",
+		"NSS": "70778029499",
+		"Direccion": "248-6135 Tellus C/"
+	},
+	{
+		"NOMBRE": "Antonio",
+		"APELLIDO": "Aravena",
+		"NSS": "76276295899",
+		"Direccion": "6403 Aliquam Ctra."
+	},
+	{
+		"NOMBRE": "Dario",
+		"APELLIDO": "Araya",
+		"NSS": "73263848299",
+		"Direccion": "192-428 Aliquam C/"
+	},
+	{
+		"NOMBRE": "Yerson",
+		"APELLIDO": "Vega",
+		"NSS": "06396645399",
+		"Direccion": "Apartado núm.: 566, 1273 Volutpat Calle"
+	}
+]
