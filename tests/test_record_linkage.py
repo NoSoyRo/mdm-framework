@@ -4,7 +4,6 @@ Tests for COVID-19 record linkage functionality
 import pytest
 import pandas as pd
 import recordlinkage
-from src.scripts.dummy_data.covid_graph_generator import CovidGraphGenerator
 
 class TestCovidRecordLinkage:
     @pytest.fixture
