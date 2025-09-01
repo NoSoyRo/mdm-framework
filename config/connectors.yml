@@ -1,0 +1,19 @@
+connectors:
+  postgres:
+    type: sql
+    host: localhost
+    port: 5432
+    database: mdm
+    user: postgres
+    password: ${POSTGRES_PASSWORD}
+    
+  neo4j:
+    type: graph
+    uri: bolt://localhost:7687
+    user: neo4j
+    password: ${NEO4J_PASSWORD}
+    
+  files:
+    type: text
+    base_path: ${DATA_PATH}
+    default_encoding: utf-8
