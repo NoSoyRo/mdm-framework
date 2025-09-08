@@ -1,0 +1,60 @@
+Práctica 2 De-duplicación de registros recordlinkage de Python
+
+NOTA: Los archivos deben estar adjuntos al correo electrónico, NO deben ser parte del texto del correo.
+
+Objetivo: Usar herramientas y librería "RecordLinkage" de Python para deduplicar registros.
+Contexto: MIA[s] ha conseguido una base de datos de las cincuenta canciones más populares (archivo duplicados) por país y el objetivo es conocer cuáles son las canciones más populares que quedan vinculadas más rápido en Panamá en 631 canciones total actualmente no hay registros similares, si se conocen los gustos de la población.
+
+Referencias:
+https://help.talend.com/reader/jE0AENS5HA9L8iGuFGmSA/Z5619lNhG_M9ffaX3fzAlg
+https://sourceforge.net/projects/febrl/
+https://recordlinkage.readthedocs.io/en/latest/index.html
+https://recordlinkage.readthedocs.io/en/latest/guides/data_deduplication.html
+https://pypi.org/project/recordlinkage-tutorial-case/
+https://www.informatica.com/products/data-quality.html#
+
+Actividad 1: Instalar biblioteca para encontrar duplicados en un archivo de canciones
+a) Instalar la biblioteca recordlinkage usando el comando que indique la referencia pip installrecordlinkage
+
+Actividad 2: Encontrar duplicados en un archivo de canciones (archivo duplicados total 476)
+a) Tome como entrada el archivo top50countryDos.csv (archivo duplicado con 447 originales y 29 duplicados)
+b) Leer el archivo y cargarlo como DataFrame
+c) Identifique qué campos pueden ser relevantes para indexar, escoja su método de indexado y genere su conjunto de pares a comparar, muestre el tamaño y si desea el contenido
+d) Compare los campos que considere relevantes a partir de los pares identificados. recuerde utilizar el comparador que corresponda al tipo de dato
+e) Realice el agrupamiento de aquellos registros que corresponda
+f) Muestre el número de registros duplicados y no correspondientes
+g) Justifique sus respuestas
+
+Actividad 3: Encontrar duplicados en otro archivo de canciones
+a) Tome como entrada el archivo top50countryDos.csv (archivos sin duplicados con 447 en total)
+b) Leer el archivo y cargarlo como DataFrame
+c) Recuerde qué opcionalmente puede pre-procesar codificando por soundex
+d) Identifique qué campos pueden ser relevantes para indexar, escoja su método de indexado y genere su conjunto de pares a comparar, muestre el tamaño y si desea el contenido
+e) Compare los campos que considere relevantes a partir de los pares identificados. recuerde utilizar el comparador que corresponda al tipo de dato
+f) Realice el agrupamiento de aquellos registros que corresponda
+g) Muestre el número de registros identificados como correspondientes
+h) Justifique sus respuestas
+
+Actividad 4: Encontrar duplicados en dos archivos de canciones
+a) Tome como entrada los archivos top50countryDos.csv y top50countryTres.csv (archivo con 447 originales duplicados 29 (canciones con T) y 39 (canciones con B) total de registros 515 y 68 duplicados)
+b) Leer el archivo y cargarlo como DataFrame
+c) Recuerde qué opcionalmente puede pre-procesar codificando por soundex
+d) Identifique qué campos pueden ser relevantes para indexar, escoja su método de indexado y genere su conjunto de pares a comparar, muestre el tamaño y si desea el contenido
+e) Compare los campos que considere relevantes a partir de los pares identificados. recuerde utilizar el comparador que corresponda al tipo de dato
+f) Realice el agrupamiento de aquellos registros que corresponda
+g) Muestre el número de registros identificados como correspondientes
+h) Justifique sus respuestas
+
+Actividad 5: Evaluar el proceso de deduplicación de registros
+a) Indique qué fuente de datos, ya sea propia o uno de los archivos top50country.csv que desea
+b) Use la misma fuente de datos sin etiquetar
+c) Justifique qué método de indexado utilizó y porqué
+d) Ejecute el proceso de deduplicación, estableciendo, indexado, comparación y clasificación utilizando la librería recordlinkage
+e) Evalúe la duplicación utilizando la librería recordlinkage
+f) ¿Cuáles son sus conclusiones? ¿Cómo varia modelos y evaluaciones? ¿Qué resultó mejor? ¿Por qué? JUSTIFIQUE SUS RESPUESTAS
+
+ENTREGABLES: Entrega vía correo electrónico, o al espacio como fecha de entrega, lo siguiente:
+1. Archivo que contenga las capturas de pantalla mostrando la evidencia de realización de todas y cada una de las actividades, así como de sus correspondientes resultados.
+2. Programas en Python derivados de la práctica
+
+Elaboró: Dra. Ma. Del Pilar Ángeles
