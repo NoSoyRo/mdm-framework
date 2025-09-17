@@ -1,0 +1,222 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{array}
+
+\title{Solución Ejercicio Deduplicación para Clase}
+\author{José Rodrigo Moreno López}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Datos}
+
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{A} & Apellido Paterno & CP \\
+\hline
+Alfredo & Cortez & 2168 \\
+Estela & Moncada & 2907 \\
+\hline
+\end{tabular}
+\hspace{1cm}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{B} & Forename & PostCode \\
+\hline
+Alberto & Perez & 2112 \\
+Laura & Montalvo & 2186 \\
+\hline
+\end{tabular}
+
+\vspace{1em}
+
+\section*{Algoritmos de Comparación}
+
+\begin{enumerate}
+    \item \textbf{Soundex:} Algoritmo fonético que convierte palabras en un código alfanumérico para comparar similitud de pronunciación.\\
+    	extit{Algoritmo Soundex:}
+    \begin{enumerate}
+        \item Conservar la primera letra.
+        \item Reemplazar las siguientes letras por números según la tabla:
+        \begin{tabular}{|c|c|}
+        \hline
+        Letras & Código \\
+        \hline
+        a, e, h, i, o, u, w, y & 0 \\
+        b, f, p, v & 1 \\
+        c, g, j, k, q, s, x, z & 2 \\
+        d, t & 3 \\
+        l & 4 \\
+        m, n & 5 \\
+        r & 6 \\
+        \hline
+        \end{tabular}
+        \item Eliminar ceros y letras repetidas.
+        \item El resultado es la primera letra seguida de tres dígitos (rellenar con ceros si es necesario).
+    \end{enumerate}
+
+    \item \textbf{Qgram (q=2) y coeficiente Dice:}\\
+    	extit{Algoritmo Qgram:}
+    \begin{enumerate}
+        \item Dividir la cadena en subcadenas de longitud $q$ (para $q=2$, pares de letras).
+        \item Contar el número de subcadenas en cada palabra: $c = |s| - q + 1$.
+    \end{enumerate}
+    	extit{Coeficiente Dice:}
+    \[
+    	ext{SimDice}(S_1, S_2) = \frac{2 \times \text{Common}(S_1, S_2)}{c_1 + c_2}
+    \]
+    Donde $\text{Common}(S_1, S_2)$ es el número de subcadenas compartidas entre $S_1$ y $S_2$.
+
+    \item \textbf{Comparación numérica:}\\
+    	extit{Algoritmo:}
+    \begin{enumerate}
+        \item Calcular la diferencia absoluta entre los valores numéricos: $d = |a - b|$.
+        \item Si $d \leq d_{max}$, se considera potencial coincidencia; si $d > d_{max}$, no hay coincidencia.
+    \end{enumerate}
+    Donde $d_{max}=40$.
+
+    \item \textbf{Clasificación por umbral:}\\
+    	extit{Algoritmo:}
+    \begin{enumerate}
+        \item Sumar los valores de similitud obtenidos (Soundex, SimDice, Numérica) para cada par: $\text{SimSum}[i,j]$.
+        \item Definir umbrales superior $tu=2.5$ e inferior $tl=1.4$.
+        \item Clasificar:
+        \begin{itemize}
+            \item Si $\text{SimSum}[i,j] \geq tu$ $\rightarrow$ Match
+            \item Si $\text{SimSum}[i,j] < tl$ $\rightarrow$ Non Match
+            \item Si $tl \leq \text{SimSum}[i,j] < tu$ $\rightarrow$ Potential Match
+        \end{itemize}
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Resolución}
+
+\subsection*{1. Soundex}
+
+	extbf{Ejemplo de indexado Soundex:}
+
+\begin{itemize}
+    \item \textbf{Cortez:}
+    \begin{enumerate}
+        \item Conservar la primera letra: \textbf{C}
+        \item Convertir el resto de letras según la tabla: o(0), r(6), t(3), e(0), z(2)
+        \item Secuencia: C06302
+        \item Eliminar ceros: C632
+        \item Rellenar a 4 caracteres: C632
+    \end{enumerate}
+    \item \textbf{Alfredo:}
+    \begin{enumerate}
+        \item Conservar la primera letra: \textbf{A}
+        \item Convertir el resto: l(4), f(1), r(6), e(0), d(3), o(0)
+        \item Secuencia: A41630
+        \item Eliminar ceros: A4163
+        \item Rellenar a 4 caracteres: A416
+    \end{enumerate}
+    \item \textbf{Perez:}
+    \begin{enumerate}
+        \item Conservar la primera letra: \textbf{P}
+        \item Convertir el resto: e(0), r(6), e(0), z(2)
+        \item Secuencia: P0602
+        \item Eliminar ceros: P62
+        \item Rellenar a 4 caracteres: P620
+    \end{enumerate}
+    \item \textbf{Moncada:}
+    \begin{enumerate}
+        \item Conservar la primera letra: \textbf{M}
+        \item Convertir el resto: o(0), n(5), c(2), a(0), d(3), a(0)
+        \item Secuencia: M05230
+        \item Eliminar ceros: M523
+        \item Rellenar a 4 caracteres: M523
+    \end{enumerate}
+    \item \textbf{Montalvo:}
+    \begin{enumerate}
+        \item Conservar la primera letra: \textbf{M}
+        \item Convertir el resto: o(0), n(5), t(3), a(0), l(4), v(1), o(0)
+        \item Secuencia: M053410
+        \item Eliminar ceros: M5341
+        \item Rellenar a 4 caracteres: M534
+    \end{enumerate}
+\end{itemize}
+
+\vspace{0.5em}
+\begin{tabular}{|c|c|}
+\hline
+Nombre/Apellido & Soundex \\
+\hline
+Alfredo & A416 \\
+Cortez & C632 \\
+Estela & E234 \\
+Moncada & M523 \\
+Alberto & A416 \\
+Perez & P620 \\
+Laura & L600 \\
+Montalvo & M534 \\
+\hline
+\end{tabular}
+
+\vspace{1em}
+
+	extbf{Coincidencias por Soundex:}
+\begin{itemize}
+    \item Alfredo (A416) y Alberto (A416): Posible coincidencia.
+    \item Moncada (M523) y Montalvo (M534): No coinciden, pero son similares.
+\end{itemize}
+
+\subsection*{2. Qgram y SimDice}
+
+Ejemplo para Cortez vs Perez ($q=2$):
+
+\begin{itemize}
+    \item Cortez: \{Co, or, rt, te, ez\}
+    \item Perez: \{Pe, er, re, ez\}
+    \documentclass{article}
+    \item $c_1 = 5$, $c_2 = 4$, comunes = 1
+    \item SimDice = $\frac{2 \times 1}{5+4} = \frac{2}{9} \approx 0.22$
+\end{itemize}
+
+Ejemplo para Moncada vs Montalvo:
+
+\begin{itemize}
+    \item Moncada: \{Mo, on, nc, ca, ad, da\}
+    \item Montalvo: \{Mo, on, nt, ta, al, lv, vo\}
+    \item Comunes: Mo, on
+    \item $c_1 = 6$, $c_2 = 7$, comunes = 2
+    \item SimDice = $\frac{2 \times 2}{6+7} = \frac{4}{13} \approx 0.31$
+\end{itemize}
+
+\subsection*{3. Comparación Numérica}
+
+\begin{itemize}
+    \item 2168 (A) vs 2112 (B): $|2168-2112| = 56 > 40$ (No Match)
+    \item 2168 (A) vs 2186 (B): $|2168-2186| = 18 \leq 40$ (Potential Match)
+    \item 2907 (A) vs 2112 (B): $|2907-2112| = 795 > 40$ (No Match)
+    \item 2907 (A) vs 2186 (B): $|2907-2186| = 721 > 40$ (No Match)
+\end{itemize}
+
+\subsection*{4. Clasificación por Umbral}
+
+Sumar los valores de similitud obtenidos y comparar con los umbrales:
+
+\begin{itemize}
+    \item Alfredo/Alberto: Soundex=1, Qgram=0, Numérico=0 $\rightarrow$ SimSum=1
+    \item Cortez/Perez: Qgram=0.22, Soundex=0, Numérico=0 $\rightarrow$ SimSum=0.22
+    \item Estela/Laura: Soundex=0, Qgram=0, Numérico=0 $\rightarrow$ SimSum=0
+    \item Moncada/Montalvo: Qgram=0.31, Soundex=0, Numérico=0 $\rightarrow$ SimSum=0.31
+    \item Alfredo/Laura: Soundex=0, Qgram=0, Numérico=0.45 $\rightarrow$ SimSum=0.45
+\end{itemize}
+
+\textbf{Clasificación:}
+\begin{itemize}
+    \item SimSum $< tl$ (1.4): Non Match
+    \item $tl \leq$ SimSum $< tu$ (2.5): Potential Match
+    \item SimSum $\geq tu$ (2.5): Match
+\end{itemize}
+
+\section*{Conclusión}
+
+No hay pares que alcancen el umbral de Match. Los pares con SimSum entre 1.4 y 2.5 serían Potential Match, pero en este caso, todos los valores son menores a 1.4, por lo que todos son Non Match.
+
+\end{document}
