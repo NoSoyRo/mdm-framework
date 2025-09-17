@@ -1,0 +1,26 @@
+Práctica 3: Perfilado de Datos y Cálculo de Completitud con Python
+
+Objetivo:
+Verificar la consistencia y la duplicidad de los datos de clientes provenientes de diversas fuentes (CSV y SQL), y calcular la completitud de los campos clave usando Python.
+
+Actividades:
+1. Cargar y explorar los datos de clientes desde archivos CSV y SQL.
+2. Renombrar y tipificar las columnas según el requerimiento.
+3. Analizar la duplicidad y unicidad de los campos clave (email, postcode, nombre, apellido, dirección, teléfono).
+4. Calcular la completitud de cada columna (porcentaje de valores no nulos y válidos).
+5. Realizar análisis de patrones y validez de los correos electrónicos y códigos postales.
+6. Generar reportes y visualizaciones de los resultados.
+
+Archivos requeridos:
+- P3-Tal-Clientes.csv
+- P3-gettingstarted.sql
+
+Entregables:
+- Notebook con el desarrollo de la práctica y visualizaciones.
+- Archivo TXT con el planteamiento y pasos realizados.
+- Reportes generados por el análisis en Python.
+
+Notas:
+- Todo el análisis se realiza en Python usando pandas y librerías estándar.
+- No se requiere Talend, todo el perfilado y análisis se hace en código Python.
+- Los archivos fuente ya están en la carpeta p3 del repositorio.
