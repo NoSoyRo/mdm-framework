@@ -1,0 +1,11 @@
+Práctica 5 - Resumen de preprocesamiento
+Registros originales: 768
+
+Nulos detectados (columns con 0->NaN):
+{'Pregnancies': 0, 'PlasmaGlucose': 5, 'DiastolicBP': 35, 'TricepsSkinFold': 227, 'TwoHourInsulin': 374, 'BMI': 11, 'DiabetesPedigree': 0, 'Age': 0, 'Outcome': 0}
+
+Archivos generados:
+- pacientes_minmax.csv
+- pacientes_standardized.csv
+- pacientes_normalized_l2.csv
+- pacientes_binary_threshold0.csv

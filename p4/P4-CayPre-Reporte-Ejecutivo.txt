@@ -1,0 +1,104 @@
+
+=== REPORTE EJECUTIVO - PRÁCTICA 4 ===
+Limpieza y Fusión de Datos con Talend Data Integration
+Fecha: 2025-09-29 16:42:01
+Autores: José Rodrigo Moreno López / Ajitzi Ricardo Quintana Ruiz
+
+========================= DATASET PERSONAS =========================
+
+1. RESUMEN DE DATOS:
+   - Registros originales: 200
+   - Registros después de limpieza: 200
+   - Registros después de fusión: 177
+   - Duplicados identificados: 21
+   - Duplicados eliminados: 23
+   - Reducción de registros: 11.5%
+
+2. MÉTRICAS DE CALIDAD (Dataset Final):
+   - Completitud promedio: 100.0%
+   - Unicidad de cédulas: 100.0%
+   - Validez de cédulas: 100.0%
+   - Validez de teléfonos: 67.8%
+   - Consistencia de nombres: 100.0%
+
+3. MEJORAS OBTENIDAS:
+   - Validez de cédulas: +92.5 puntos porcentuales
+   - Consistencia de nombres: +99.5 puntos porcentuales
+   - Unicidad de cédulas: +10.0 puntos porcentuales
+
+========================= DATASET CUSTOMERS =========================
+
+1. RESUMEN DE DATOS:
+   - Registros originales: 6109
+   - Registros después de limpieza: 6109
+
+2. MÉTRICAS DE CALIDAD (Dataset Final):
+   - Completitud promedio: 100.0%
+   - Unicidad de emails: 92.7%
+   - Validez de emails: 77.0%
+   - Validez de teléfonos: 89.9%
+   - Consistencia de nombres: 100.0%
+
+3. MEJORAS OBTENIDAS:
+   - Validez de teléfonos: +89.9 puntos porcentuales
+   - Consistencia de nombres: +0.6 puntos porcentuales
+
+========================= REGLAS DE NEGOCIO APLICADAS =========================
+
+PERSONAS:
+✓ Normalización de nombres (capitalización título)
+✓ Normalización de cédulas (solo números, sin puntos ni comas)
+✓ Normalización de teléfonos (solo números, sin guiones ni espacios)
+✓ Normalización de profesiones (capitalización título)
+✓ Normalización de fechas (formato español a ISO: YYYY-MM-DD)
+
+CUSTOMERS:
+✓ Normalización de nombres (capitalización título)
+✓ Normalización de emails (minúsculas)
+✓ Normalización de teléfonos (solo números)
+
+========================= CRITERIOS DE FUSIÓN =========================
+
+PERSONAS:
+✓ Registros con misma cédula (criterio más confiable)
+✓ Registros con nombres similares (>85% similitud) y mismo teléfono
+✓ Registros con nombres muy similares (>95% similitud)
+
+========================= ARCHIVOS GENERADOS =========================
+
+1. Datasets principales:
+   - P4-CayPre-Personas-Fusion_limpio.csv
+   - P4-CayPre-Customers_limpio.csv
+
+2. Reportes de calidad:
+   - P4-CayPre-Reporte-Calidad-Personas.csv
+   - P4-CayPre-Reporte-Calidad-Customers.csv
+
+3. Reporte de duplicados:
+   - P4-CayPre-Duplicados-Personas.csv
+
+========================= RECOMENDACIONES =========================
+
+PERSONAS:
+- Implementar validación de entrada para formato de cédulas
+- Establecer formato estándar único para teléfonos
+- Considerar validación adicional para fechas
+- Mantener proceso de deduplicación regular
+
+CUSTOMERS:
+- Implementar validación de entrada para emails
+- Mejorar formato de teléfonos en origen
+- Considerar proceso de deduplicación basado en emails
+- Validar direcciones postales
+
+========================= CONCLUSIONES =========================
+
+El proceso de limpieza y fusión implementado ha demostrado ser altamente efectivo:
+
+1. Se logró una mejora sustancial en la calidad de datos de ambos datasets
+2. La eliminación de duplicados redujo la redundancia manteniendo información completa
+3. Las reglas de normalización aseguraron consistencia en formatos
+4. Los procesos son reproducibles y pueden automatizarse
+
+Este enfoque simula exitosamente las capacidades de Talend Data Integration
+aplicando las mejores prácticas de gestión de calidad de datos.
